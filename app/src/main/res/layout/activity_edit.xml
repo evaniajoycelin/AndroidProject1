@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Item"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:textColor="@color/text">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/text">
+    </TextView>
+
+    <EditText
+        android:id="@+id/edit_item_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/text">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Description"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/text">
+    </TextView>
+
+    <EditText
+        android:id="@+id/edit_item_et_desc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:inputType="textMultiLine"
+        android:background="@drawable/edit_text_border"
+        android:padding="10dp"
+        android:gravity="top|left"
+        android:lines="4"
+        android:textColor="@color/text"
+        >
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Quantity"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/text">
+    </TextView>
+
+    <EditText
+        android:id="@+id/edit_item_et_qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:background="@drawable/edit_text_border"
+        android:padding="10dp"
+        android:textColor="@color/text">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/edit_item_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Edit">
+    </Button>
+
+</LinearLayout>
